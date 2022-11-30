@@ -1,0 +1,50 @@
+##
+POST http://localhost:8000/api/category/create
+Content-Type: application/json
+
+{
+    "name": "Hộp trà quà tặng"
+}
+
+###
+GET http://localhost:8000/api/category
+
+###
+POST http://localhost:8000/api/product/create
+Content-Type: application/json
+
+{
+    "name" : "Chè Thái Nguyên 1",
+    "category" : "dswrfefedasf",
+    "priceBuy": 80,
+    "price" : 100,
+    "mass": 150,
+    "desc": "<h1 id='test'>Test mô tả</h1>"
+}
+
+###
+//Get By id
+GET http://localhost:8000/api/product?categoryId=6a61636b6164667376666473
+
+
+
+/// POST
+###
+GET http://localhost:8000/api/categoryPost
+
+###
+POST http://localhost:8000/api/categoryPost
+Content-Type: application/json
+
+{
+    "name" : "Tin tức ngành chè"
+}
+
+
+
+//Tìm kiếm
+###
+GET http://localhost:8000/api/product/search?q=th
+
+
+
