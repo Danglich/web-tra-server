@@ -7,6 +7,7 @@ import categoryRouter from './routes/category.js';
 import productRouter from './routes/product.js';
 import categoryPostRouter from './routes/categoryPost.js';
 import postRouter from './routes/post.js';
+import messageRouter from './routes/message.js';
 
 dotenv.config();
 
@@ -58,6 +59,7 @@ app.use('/api/category', categoryRouter);
 app.use('/api/product', productRouter);
 app.use('/api/categoryPost', categoryPostRouter);
 app.use('/api/post', postRouter);
+app.use('/api/message', messageRouter);
 
 app.listen(PORT, () => {
     console.log('listening on port ' + PORT);

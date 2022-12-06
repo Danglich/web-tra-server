@@ -44,7 +44,12 @@ Content-Type: application/json
 
 //Tìm kiếm
 ###
-GET http://localhost:8000/api/product/search?q=th
+POST http://localhost:8000/api/message/create
+Content-Type: application/json
+
+{
+    "name" : "Tin tức ngành chè"
+}
 
 
 
