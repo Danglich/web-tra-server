@@ -50,6 +50,10 @@ app.use((req, res, next) => {
 
 const PORT = process.env.PORT || 8000;
 
+app.get('/', (req, res) => {
+    res.status(200).json('Hello xin chào');
+});
+
 app.use('/api/category', categoryRouter);
 app.use('/api/product', productRouter);
 app.use('/api/categoryPost', categoryPostRouter);
